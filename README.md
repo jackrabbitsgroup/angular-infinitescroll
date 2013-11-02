@@ -1,15 +1,18 @@
 # AngularJS infinite scroll (more robust) directive
 
-[TODO - brief summary]
+## Why / When to use?
+Why not just use the (popular) <a href='https://github.com/BinaryMuse/ngInfiniteScroll'>nginfinitescroll</a> directive?
+nginfinitescroll is awesome, simple, and lightweight, but when working with mobile devices especially, it's good practice to limit the number of DOM elements on the screen so we wanted something that would limit the DOM to only the visible elements. This directive address that and has some more robust features. If you don't need these extra features and/or want ALL content to remain visible on the DOM as you scroll, by all means stick with something like nginfinitescroll - it gets the job done and is more lightweight (less code) than this. But if you want a bit more control and DOM performance, try this out.
 
 ## Demo
 http://jackrabbitsgroup.github.io/angular-infinitescroll/
 
 ## Dependencies
 - required:
-	[TODO]
+	- AngularJS (tested with v2.0.rc3)
+	- jQuery (tested with 1.8.3) - NOTE: we're aiming to remove this dependency to keep it more lightweight
 - optional
-	[TODO]
+	- [none]
 
 See `bower.json` and `index.html` in the `gh-pages` branch for a full list / more details
 
