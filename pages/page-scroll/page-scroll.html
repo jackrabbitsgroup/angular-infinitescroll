@@ -1,0 +1,9 @@
+<div ng-controller='PageScrollCtrl'>	
+	<div jrg-infinitescroll items='usersList' items-view='users' load-more='loadMore' opts='scrollOpts' page-size='40' negative-load='1' scroll-load='1' page-scroll='1'>
+		<!-- custom display code to ng-repeat and display the results (items) goes below -->
+		<div class='friends-user' ng-repeat='user in users'>
+			{{user.name}}
+		</div>
+		<!-- end: custom display code -->
+	</div>
+</div>

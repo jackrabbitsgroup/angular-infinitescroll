@@ -20,11 +20,14 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	var staticPath;
 	staticPath ='/angular-directives/angular-infinitescroll/';		//local
 	staticPath ='/angular-infinitescroll/';		//gh-pages
-	var appPathRoute =staticPath;
+	var appPathRoute ='/';
 	var pagesPath =staticPath+'pages/';
 	
 	
 	$routeProvider.when(appPathRoute+'home', {templateUrl: pagesPath+'home/home.html'});
+	
+	$routeProvider.when(appPathRoute+'basic', {templateUrl: pagesPath+'basic/basic.html'});
+	$routeProvider.when(appPathRoute+'page-scroll', {templateUrl: pagesPath+'page-scroll/page-scroll.html'});
 
 	$routeProvider.otherwise({redirectTo: appPathRoute+'home'});
 	

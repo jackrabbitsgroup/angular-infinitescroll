@@ -1,0 +1,9 @@
+<div ng-controller='BasicCtrl'>	
+	<div jrg-infinitescroll items='usersList' items-view='users' load-more='loadMore' opts='scrollOpts'>
+		<!-- custom display code to ng-repeat and display the results (items) goes below -->
+		<div class='friends-user' ng-repeat='user in users'>
+			{{user.name}}
+		</div>
+		<!-- end: custom display code -->
+	</div>
+</div>
