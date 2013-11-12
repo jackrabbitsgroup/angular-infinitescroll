@@ -19,7 +19,7 @@ config(['$routeProvider', '$locationProvider', '$compileProvider', function($rou
 	// var staticPath ='/';
 	var staticPath;
 	staticPath ='/angular-directives/angular-infinitescroll/';		//local
-	// staticPath ='/angular-infinitescroll/';		//gh-pages
+	staticPath ='/angular-infinitescroll/';		//gh-pages
 	var appPathRoute ='/';
 	var pagesPath =staticPath+'pages/';
 	
