@@ -160,7 +160,7 @@ angular.module('jackrabbitsgroup.angular-infinitescroll', []).directive('jrgInfi
 			loadMore:'&?'
 		},
 
-		compile: function(element, attrs) {
+		template: function(element, attrs) {
 			var defaults ={'pageSize':10, 'scrollLoad':'0', 'loadMorePageSize':20, 'pageScroll':0, 'scrollBuffer':50, 'scrollBufferPercent':33, 'noStopLoadMore':0, 'negativeLoad':0, 'animateLoad':0, 'animateScrollDuration':1000, 'itemHeight':0, 'animateAfterItems':0, 'animateAfterDuration':1000, 'noMoreResultsText':'No More Results!', 'minItemsToShow':0};
 			for(var xx in defaults) {
 				if(attrs[xx] ===undefined) {
@@ -219,10 +219,7 @@ angular.module('jackrabbitsgroup.angular-infinitescroll', []).directive('jrgInfi
 				"</div>"+
 			"</div>";
 				
-			element.replaceWith(html);
-
-			return function(scope, element, attrs) {
-			};
+			return html;
 		},
 		
 		controller: function($scope, $element, $attrs) {

@@ -11,8 +11,6 @@ http://jackrabbitsgroup.github.io/angular-infinitescroll/
 - required:
 	- AngularJS (tested with v2.0.rc3)
 	- jQuery (tested with 1.8.3) - NOTE: we're aiming to remove this dependency to keep it more lightweight
-- optional
-	- [none]
 
 See `bower.json` and `index.html` in the `gh-pages` branch for a full list / more details
 
@@ -21,7 +19,7 @@ See `bower.json` and `index.html` in the `gh-pages` branch for a full list / mor
 	1. Bower
 		1. add `"angular-infinitescroll": "latest"` to your `bower.json` file then run `bower install` OR run `bower install angular-infinitescroll`
 2. include the files in your app
-	1. `infinitescroll.js`
+	1. `infinitescroll.min.js`
 	2. `infinitescroll.less`
 3. include the module in angular (i.e. in `app.js`) - `jackrabbitsgroup.angular-infinitescroll`
 
