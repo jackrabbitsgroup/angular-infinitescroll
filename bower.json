@@ -4,6 +4,7 @@
 	"authors": [
 		"Luke Madera <luke.madera@gmail.com>"
 	],
+	"main" : "infinitescroll.js",
 	"description": "AngularJS infinite scroll (more robust) directive",
 	"keywords": [
 		"angular",
